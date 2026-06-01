@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Todo Board</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 Smart Todo Board</h1>
+
+    <form id="todoForm">
+        <input
+            type="text"
+            id="taskInput"
+            placeholder="Kirjoita tehtävä..."
+        >
+
+        <select id="priority">
+            <option value="Matala">Matala</option>
+            <option value="Normaali">Normaali</option>
+            <option value="Korkea">Korkea</option>
+        </select>
+
+        <button type="submit">Lisää</button>
+
+        <p id="errorMessage"></p>
+    </form>
+
+    <div class="controls">
+        <button id="showAll">Kaikki</button>
+        <button id="showActive">Aktiiviset</button>
+        <button id="showCompleted">Valmiit</button>
+    </div>
+
+    <h3 id="taskCounter">Avoimia tehtäviä: 0</h3>
+
+    <ul id="taskList"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

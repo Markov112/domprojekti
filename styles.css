@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    padding: 30px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input,
+select,
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+input {
+    flex: 1;
+}
+
+button {
+    cursor: pointer;
+}
+
+#errorMessage {
+    width: 100%;
+    color: red;
+    margin-top: 5px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.controls {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#taskCounter {
+    margin-top: 20px;
+}
+
+#taskList {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px;
+    margin-bottom: 10px;
+
+    background: #eef2ff;
+    border-radius: 8px;
+}
+
+.task-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.priority {
+    font-size: 14px;
+    color: #555;
+}
+
+.task-buttons button {
+    margin-left: 5px;
+}
